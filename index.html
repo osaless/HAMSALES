@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
+</head>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+        <a href="#" class="w3-bar-item w3-button">INÍCIO</a>
+        <a href="#menu" class="w3-bar-item w3-button">CARDÁPIO</a>
+        <a href="#about" class="w3-bar-item w3-button">SOBRE NÓS</a>
+        <a href="#myMap" class="w3-bar-item w3-button">CONTATO</a>
+    </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <img src="img/hamburgueria-equipamentos-necessarios-7fa30ce7.webp" alt="">
+    <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">ABERTO DESDE 1930</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white w3-hide-small" style="font-size:100px"><strong>CONHEÇA<br> À <br> HAMSALES</strong></span>
+        <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST
+                PIZZA</b></span>
+        <p><a href="#menu" class="w3-button w3-xxlarge w3-black">CARDÁPIO </a></p>
+    </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+    <div class="w3-content">
+
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Lanches</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bebidas</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Porções</div>
+            </a>
+        </div>
+
+        <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>X-BURGUER</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$12,50</span></h1>
+            <p class="w3-text-grey">Pão, Hamburguer, Queijo e maionese da casa </p>
+            <hr>
+
+            <h1><b>X-SALADA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$15.50</span></h1>
+            <p class="w3-text-grey">Pão, Hamburguer, Queijo, Salada e Maionese da casa </p>
+            <hr>
+
+            <h1><b>X-GALINHA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$15.00</span></h1>
+            <p class="w3-text-grey">Pão, Frango, Queijo, Salada e Maionese da casa</p>
+            <hr>
+
+            <h1><b>X-BACON</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$16.00</span></h1>
+            <p class="w3-text-grey">Pão, Hamburguer, Queijo, Bacon e Maionese da casa</p>
+            <hr>
+
+            <h1><b>X-VEGANO</b> <span class="w3-tag w3-red w3-round">Hot!</span><span
+                    class="w3-right w3-tag w3-dark-grey w3-round">R$20.00</span></h1>
+            <p class="w3-text-grey">Pão, Hamburguer(Soja), Queijo, Salada e Maionese da casa</p>
+            <hr>
+
+            <h1><b>X-TUDO</b> <span class="w3-tag w3-grey w3-round">New</span><span
+                    class="w3-right w3-tag w3-dark-grey w3-round">R$21.50</span></h1>
+            <p class="w3-text-grey">Pão, Hamburguer, Queijo, Salada, Bacon, Presunto e Maionese da casa</p>
+        </div>
+
+        <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>SUCO NATURAL</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span
+                    class="w3-right w3-tag w3-dark-grey w3-round">R$9.50</span></h1>
+            <p class="w3-text-grey">Laranja, limão, Maracuja, Morango, e Manga </p>
+            <hr>
+
+            <h1><b>REFRIGERANTES</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$5.50</span></h1>
+            <p class="w3-text-grey">Coca cola, Soda, Fanta e Dolly </p>
+            <hr>
+
+            <h1><b>DRINKS</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$11.00</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+            <hr>
+
+            <h1><b>DOSES</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$25.50</span></h1>
+            <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+        </div>
+
+
+        <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>FRITAS</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span
+                    class="w3-right w3-tag w3-dark-grey w3-round">R$40.00</span></h1>
+            <p class="w3-text-grey">1,50kg</p>
+            <hr>
+
+            <h1><b>CONTRA-FILÉ</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$55.50</span></h1>
+            <p class="w3-text-grey">1,00kg</p>
+            <hr>
+
+            <h1><b>CALABRESA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$45.50</span></h1>
+            <p class="w3-text-grey">1,00kg</p>
+            <hr>
+
+            <h1><b>MISTA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$110.00</span></h1>
+            <p class="w3-text-grey">Fritas, Contra filé e calabresa 3,50kg</p>
+        </div><br>
+
+    </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">SOBRE NÓS</h1>
+        <p>A grande popularidade do hambúrguer aconteceu por conta da sua praticidade. No início do século XIX, a
+            explosão industrial tomou os EUA e com isto se fazia necessário alimentos que fossem práticos, rápidos e
+            baratos para alimentar a grande massa de trabalhadores.
+
+            Nesta época já existiam os carrinhos de sorvete e até mesmo os Hot dogs, ideias que também haviam chegado no
+            país através dos alemães. Foi então que, em 1921 surgiu a primeira cadeia de lanchonetes daquele país, a
+            White Castle, que vendia uma versão cozida do hamburguer temperado com cebola..</p>
+        <p><strong>O CHEFE?</strong> mckebin <img src="img/pedrogodoy-chamada.jpg" style="width:150px"
+                class="w3-circle w3-right" alt="Chef"></p>
+
+        <img src="img/Hamburgueria-da-Alfândega-Ipanema.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom"
+            alt="Restaurant">
+        <h1><b>Horários </b></h1>
+
+        <div class="w3-row">
+            <div class="w3-col s6">
+                
+                <p>Segunda a quinta 10h - 23h</p>
+                
+            </div>
+            <div class="w3-col s6">
+                <p>Friday 11h - 00h</p>
+                <p>Saturday 12h - 00h</p>
+                <p>Domingo Fechado</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">CONTATO</h1>
+        <p>Ligue 05050515-122330</p>
+        <p><span class="w3-tag">!!!</span> Para melhor experiência, agende seu horário!   </p>
+        <p class="w3-xxlarge"><strong>Reserve</strong> use a tabela e economize tempo:</p>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantidade de pessoas" required
+                    name="People"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time"
+                    required name="date" value="2020-11-16T20:00"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Suas observações"
+                    required name="Message"></p>
+            <p><button class="w3-button w3-light-grey w3-block" type="submit">FINALIZAR</button></p>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>Todos direitos reservaodos à <a href="#" title="W3.CSS" target="_blank"
+            class="w3-hover-text-green">HamSales</a></p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+
+</body>
+
+</html>
